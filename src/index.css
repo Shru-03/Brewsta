@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  font-family: "Pin-Sans";
+}
+/* https://wallpaperaccess.com/full/1320619.jpg */
+html {
+  scroll-behavior: smooth;
+}
+.logo {
+  font-family: "Playfair Display", "serif";
+}
+
+.heading {
+  color: hsl(0, 0%, 48%);
+  text-transform: uppercase;
+  background: linear-gradient(
+    to right,
+    hsl(0, 0%, 48%) 0,
+    hsl(0, 0%, 100%) 10%,
+    hsl(0, 0%, 48%) 20%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 3s infinite linear;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 0;
+  }
+  60% {
+    background-position: 600px;
+  }
+  100% {
+    background-position: 600px;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  animation: marquee 15s linear infinite;
+}
+
+/* FallingBeans.css */
+
+.bean-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.falling-bean {
+  position: absolute;
+  top: -50px;
+  width: 25px;
+  opacity: 0.8;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(110vh) rotate(360deg);
+  }
+}
