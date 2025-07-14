@@ -5,12 +5,12 @@ const videoData = [
     desc: "Handpicked from the finest farms for the richest flavor.",
   },
   {
-    src: "/p2.mp4",
+    src: "/p3.mp4",
     title: "Grinding to Perfection",
     desc: "Precision-ground to extract every ounce of aroma.",
   },
   {
-    src: "/p3.mp4",
+    src: "/p4.mp4",
     title: "Brewing the Magic",
     desc: "Artfully brewed to awaken your senses.",
   },
