@@ -88,7 +88,14 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="border-t border-white/20 mt-10 pt-6 text-center text-sm text-white/70">
-        © {new Date().getFullYear()} Brewsta. All rights reserved.
+        © {new Date().getFullYear()} Brewsta. All rights reserved.{" "}
+        <a
+          href="https://www.linkedin.com/in/shruti-sharma-developer/"
+          target="_blank"
+          className="underline text-[#d0b185]"
+        >
+          Shruti Sharma
+        </a>
       </div>
     </footer>
   );

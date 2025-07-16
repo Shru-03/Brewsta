@@ -2,10 +2,18 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { HiMenuAlt3, HiX } from "react-icons/hi";
 
-const Navbar = () => {
+const Navbar = ({ aboutRef }) => {
   const navigate = useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const handleAboutClick = () => {
+    if (window.location.pathname !== "/") {
+      navigate("/#about");
+    } else if (aboutRef?.current) {
+      aboutRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+    setMenuOpen(false);
+  };
   return (
     <div className="fixed top-0 left-0 right-0 z-50 flex justify-center">
       <nav className="w-[90%] mt-8 py-5 px-6 rounded-2xl backdrop-blur-md bg-white/10 border border-white/10 shadow-md shadow-black/10">
@@ -23,12 +31,12 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:flex items-center space-x-6 text-white text-md font-medium">
-            <Link
-              to="/about"
-              className="hover:text-[#d0b185] transition-colors"
+            <button
+              onClick={handleAboutClick}
+              className="cursor-pointer hover:text-[#d0b185] transition-colors"
             >
               About
-            </Link>
+            </button>
             <Link to="/brew" className="hover:text-[#d0b185] transition-colors">
               Brew Bar
             </Link>
@@ -53,13 +61,13 @@ const Navbar = () => {
 
         {menuOpen && (
           <div className="md:hidden mt-4 flex flex-col space-y-4 text-white text-md font-medium">
-            <Link
+            <button
               to="/about"
-              onClick={() => setMenuOpen(false)}
-              className="hover:text-[#d0b185]"
+              onClick={handleAboutClick}
+              className="cursor-pointer hover:text-[#d0b185]"
             >
               About
-            </Link>
+            </button>
             <Link
               to="/brew"
               onClick={() => setMenuOpen(false)}

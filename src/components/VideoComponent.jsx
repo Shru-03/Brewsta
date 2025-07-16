@@ -19,7 +19,6 @@ const videoData = [
 const VideoComponent = () => {
   return (
     <section className="backdrop-blur-md bg-white/10 border border-white/10 shadow-md shadow-black/10 py-10 px-4 sm:px-8 md:px-16 xl:px-32">
-      {/* Section Heading */}
       <div className="text-center">
         <h2 className="tracking-wider text-3xl md:text-4xl uppercase text-white">
           Bean to Brew
@@ -30,7 +29,6 @@ const VideoComponent = () => {
         <div className="mx-auto mt-4 w-[120px] h-[1px] bg-white" />
       </div>
 
-      {/* Videos */}
       <div className="mt-10 flex flex-col md:flex-row items-center justify-center gap-6">
         {videoData.map((video, index) => (
           <div
