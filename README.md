@@ -1,14 +1,15 @@
-#☕ Brewsta Café
+# ☕ Brewsta Café
 A sleek and animated coffee listing interface built with React.js, Tailwind CSS, and AOS animations. Curated for caffeine lovers and front-end aesthetics.
 
-🖼️ Project Overview
+# 🖼️ Project Overview
 Brewsta Café is a coffee shop website. It showcases a responsive, animated catalog of brews, designed to deliver a smooth, visually-rich user experience.
 
-The goal: explore component-based design, utility-first styling, and subtle scroll animations—all wrapped in a stylish café theme.
+## The goal: 
+explore component-based design, utility-first styling, and subtle scroll animations—all wrapped in a stylish café theme.
 
 
 
-🛠 Tech Stack
+# 🛠 Tech Stack
 
 | Technology              | Role                             |
 | ----------------------- | -------------------------------- |
@@ -18,16 +19,22 @@ The goal: explore component-based design, utility-first styling, and subtle scro
 
 
 
-✨ Features
+# ✨ Features
 📋 Coffee product listing with images, prices, and descriptions
+
 🔄 Smooth scroll animations powered by AOS
+
 📱 Fully responsive layout for all screen sizes
+
 🎨 Tailwind CSS for rapid styling
+
 🧩 Component-based architecture
 
 
 # Clone the repo
 git clone https://github.com/shru-03/Brewsta.git
+
+cd /Brewsta
 
 # Install dependencies
 npm install
@@ -35,7 +42,8 @@ npm install
 # Start the development server
 npm run dev
 
-Live Demo: https://brewsta.netlify.app/
+#Live Demo: 
+https://brewsta.netlify.app/
 
 <img width="1892" height="902" alt="image" src="https://github.com/user-attachments/assets/619f0753-c7c9-454d-9db3-856304e0ca25" />
 
